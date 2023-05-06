@@ -1,86 +1,65 @@
-/* ------------Authen modal------------------- */
 body{
-  background-color: bisque;
+    background: url('../img/off.png');
+    background-size: cover;
+    background-position-y: -80px;
+    font-size: 16px;
 }
-.auth-form {
-  width: 500px;
+#wrapper{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-
-.auth-form__container{
-    padding: 0 32px;
-
+#form-login{
+    max-width: 400px;
+    background: rgba(132, 93, 42, 0.8);
+    flex-grow: 1;
+    padding: 30px 30px 40px;
+    box-shadow: 0px 0px 17px 2px rgba(255, 255, 255, 0.8);
 }
-
-.auth-form__header{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.form-heading{
+    font-size: 25px;
+    color: #f5f5f5;
+    text-align: center;
+    margin-bottom: 30px;
 }
-
-.auth-form__heading {
-  font-size: 2.2rem;
-  font-weight: 400;
-  color: var(--text-color);
+.form-group{
+    border-bottom: 1px solid #fff;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    display: flex;
 }
-
-.auth-form__switch-btn {
-    font-size: 1.6rem;
-    font-weight: 400;
-    color: var(--primary-color);
+.form-group i{
+    color: #fff;
+    font-size: 14px;
+    padding-top: 5px;
+    padding-right: 10px;
+}
+.form-input{
+    background: transparent;
+    border: 0;
+    outline: 0;
+    color: #f5f5f5;
+    flex-grow: 1;
+}
+.form-input::placeholder{
+    color: #f5f5f5;
+}
+#eye i{
+    padding-right: 0;
     cursor: pointer;
 }
-.auth-form__form {
 
-}
-
-.auth-form__input {
+.form-submit{
+    background: transparent;
+    border: 1px solid #f5f5f5;
+    color: #fff;
     width: 100%;
-    height: 40px;
-    margin-top: 16px;
-    padding: 0 12px;
-    font-size: 1.4rem;
-    border-radius: 2px;
-    border: 1px solid black;
-    outline: none;
+    text-transform: uppercase;
+    padding: 6px 10px;
+    transition: 0.25s ease-in-out;
+    margin-top: 30px;
 }
-
-.auth-form__input:focus {
-  border-color: #888;
-}
-
-.auth-form__aside {
-  margin-top: 18px;
-}
-
-.auth-form__policy-text {
-  font-size: 1.2rem;
-  line-height: 1.8rem;
-  text-align: center;
-  padding: 0 12px;
-}
-
-.auth-form__text-link {
-  text-decoration: none;
-  color: black;
-}
-
-.auth-form__controls {
-  margin-top: 80px;
-
-}
-
-.btn {
-  min-width: 142px;
-  height: 36px;
-  text-decoration: none;
-  border: none;
-  border-radius: 2px;
-  font-size: 1.2rem;
-  align-items: center;
-}
-
-.btn.btn--primary {
-  color: white;
-  background-color: var(--primary-color);
+.form-submit:hover{
+    border: 1px solid #54a0ff;
 }
